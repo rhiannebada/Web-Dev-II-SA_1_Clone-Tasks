@@ -1,0 +1,431 @@
+body { 
+    font-family: 'Lato', sans-serif; /* custom font */
+    margin: 0; /* removes default margin */
+    padding: 0; 
+    padding-bottom: 16px;
+    background-color: #070410;
+    color: #FFFFFF;
+    box-sizing: border-box; /* ensures consistent box model behaviour */
+}
+
+header { 
+    background-color: #231651; 
+    color: white;
+    padding: 16px;
+    /* aligns header content horizontally */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 { /* logo font style and size */
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    text-align: left;
+}
+
+header .nav-links ul {
+    list-style-type: none; /* removes list styling */
+    padding: 0;
+    display: flex; /* displays navigation links in horizontal row */
+}
+
+header .nav-links a {
+    text-decoration: none; /* removes text underline */
+    color: white;
+    display: flex;
+}
+
+header .nav-links a:hover { /* hover effect for navigation links */
+    color: #eef36a;
+}
+
+header .search button {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    padding: 8px 16px;
+    background-color: #eef36a;
+    color: #231651;
+    border: none;
+    border-radius: 16px;
+}
+
+header .search button:hover { /* hover effect for search button */
+    background-color: white;
+    color: #231651;
+}
+
+.maincontainer { 
+    max-width: 900px; /* width limit */
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding: 0px;
+    padding-top: 16px;
+    text-align: center; /* center aligns text */
+} 
+
+.moviecontainer {
+    display: grid; /* uses grid layout for movies spacing between items */
+    gap: 32px; /* adds space between items */
+}
+
+.moviebox { 
+    background-color: #070410;
+    padding-bottom: 16px;
+    border: 2px solid #231651; /* adds border */
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.moviebox img {
+    width: 100%;
+    border: 1px solid #231651;
+}
+
+.moviedescription {
+    font-size: 1.5em; /* adjusts default font size */
+    margin-bottom: 16px;
+    padding: 16px;
+    padding-top: 0;
+    text-align: left;
+}
+
+
+.watchnow { /* watch now button styling */
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    padding: 10px 16px;
+    background-color: #eef36a;
+    color: #231651;
+    border: none; /* removes default border */
+    border-radius: 8px; /* adds rounded corners */
+    width: 94%; /* responsive width */
+}
+
+.watchnow:hover { /*  */
+    background-color: #231651;
+    color: #ffffff;
+}
+
+
+/* mobile viewport */
+@media (min-width: 360px) {
+    header .nav-links a {
+        display: none; /* hides navigation link */
+    }
+
+    img {
+        width: 100%; /* makes image responsive */
+    }
+
+    .moviecontainer4,
+    .moviecontainer5,
+    .moviecontainer6 {
+        gap: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border: 2px solid #231651;
+    }
+
+    .moviecontainer4 img,
+    .moviecontainer5 img,
+    .moviecontainer6 img {
+        border: 1px solid #231651;
+    }
+
+    .moviecontainer4 .watchnow,
+    .moviecontainer5 .watchnow,
+    .moviecontainer6 .watchnow {
+        margin-bottom: 16px;
+    }
+}
+
+
+/* tablet viewport */
+@media (min-width: 720px) {
+
+    header {
+        box-shadow: 0px 6px 0px #eef36a; /* adds solid shadow below the header */
+    }
+    
+    header .logo h1 {
+        font-size: 3em;
+    }
+
+    header .search button {
+        font-size: 2em;
+    }
+
+    header .nav-links ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        gap: 32px;
+    }
+
+    header .search button {
+        font-family: 'Teko', sans-serif;
+        font-size: 2em;
+        padding: 8px 16px;
+        background-color: #eef36a;
+        color: #231651;
+        border: none;
+        border-radius: 16px;
+    }
+
+    header .search button:hover { /* hover effect for search button */
+        background-color: white;
+        color: #231651;
+        border: none;
+        border-radius: 16px;
+    }
+    
+    header .nav-links a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+    }
+
+    .maincontainer { /* uses 2 column grid layout */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        padding: 20px; 
+    }
+
+    /* movie containers 1, 2, 3 */
+    .moviecontainer1, 
+    .moviecontainer2, 
+    .moviecontainer3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        gap: 0px;
+    }
+
+    .moviebox { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #070410;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border: 1px solid #231651;
+        box-shadow: 6px 6px 0px #231651;
+    }
+    
+    .moviedescription {
+        font-size: 1.5em; /* adjusts default font size */
+        margin-bottom: 12px;
+        padding: 16px;
+        padding-top: 0;
+        text-align: left;
+        min-height: 370px;
+    }
+    
+    .watchnow {
+        font-family: 'Teko', sans-serif; /* sets font */
+        font-size: 2em;
+        padding: 10px 110px;
+        line-height: 30px;
+        background-color: #eef36a;
+        color: #231651;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 90%;
+        margin: 0 auto; /* centers the button horizontally */
+    }
+    
+    .watchnow:hover { /* hover effect for watch now button */
+        background-color: #231651;
+        color: #ffffff;
+    }
+
+    /* movie containers 4, 5, 6 */
+    .moviecontainer4,
+    .moviecontainer5,
+    .moviecontainer6 {
+       gap: 16px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        box-shadow: 6px 6px 0px #231651;
+        border: 1px solid #231651;
+    }
+
+    /* image spans the first column and both rows */
+    .moviecontainer4 img,
+    .moviecontainer5 img,
+    .moviecontainer6 img {
+        width: 100%;
+        border: 1px solid #231651;
+    }
+
+    /* movie description in second column, first row */
+    .moviecontainer4 .moviedescription,
+    .moviecontainer5 .moviedescription,
+    .moviecontainer6 .moviedescription {
+        font-size: 1.5rem;
+        text-align: left;
+        min-height: 100px;
+    }
+
+    /* watch now button in second column, second row */
+    .moviecontainer4 .watchnow,
+    .moviecontainer5 .watchnow,
+    .moviecontainer6 .watchnow {
+        grid-column: 1; 
+        grid-row: 3; 
+        background-color: #eef36a;
+        margin-bottom: 15px;
+        margin-top: -10px;
+        padding-left: 10px 110px;
+    }
+
+    /* hover effect for watch now button */
+    .moviecontainer4 .watchnow:hover,
+    .moviecontainer5 .watchnow:hover,
+    .moviecontainer6 .watchnow:hover {
+        background-color: #231651;
+        color: #ffffff;
+    }
+
+    /* additional adjustments to ensure containers take up the full width and look visually balanced */
+    .moviecontainer4,
+    .moviecontainer5,
+    .moviecontainer6 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* desktop viewport */
+@media (min-width: 1024px) {
+    .maincontainer {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-gap: 48px; /* increase grid gap for desktop view */
+    }
+
+    .moviecontainer1 {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:relative;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .moviecontainer1 img {
+        max-height: 400px;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+    }
+
+    .moviecontainer1 .moviedescription {
+        text-align: left; 
+        margin-right: 20px; 
+        margin-left: 20px;
+        max-width: 60%; /*  */
+        display: inline;
+        margin-bottom: -150px;
+    }
+
+    .moviecontainer1 .watchnow {
+        max-width: 200px;
+        padding: 30px;
+        padding-left: 50px;
+        position: absolute;
+        top: 480px;
+        right: 50px;
+    }
+
+    .moviecontainer2,
+    .moviecontainer3 {
+        grid-column: span 1;
+    }
+
+
+    .moviecontainer2 .moviedescription {
+        min-height: 250px;
+    }
+
+    .moviecontainer2 .watchnow {
+        padding: 20px;
+    }
+
+    .moviecontainer3 .moviedescription {
+        min-height: 250px;
+    }
+
+    .moviecontainer3 .watchnow {
+        padding: 20px;
+    }
+
+    .moviecontainer4,
+    .moviecontainer5,
+    .moviecontainer6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+        grid-template-rows: 1fr auto; /* image spans both rows */
+        gap: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        width: 100%; /* ensure container takes full width */
+        box-sizing: border-box; /* prevent layout issues */
+        margin-left: auto;
+        margin-right: auto; /* center the container */
+    }
+
+    /* image spans the first column and both rows */
+    .moviecontainer4 img,
+    .moviecontainer5 img,
+    .moviecontainer6 img {
+        grid-column: 1; /* image occupies the first column */
+        grid-row: span 2; /* image spans both rows */
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /* movie description in second column, first row */
+    .moviecontainer4 .moviedescription,
+    .moviecontainer5 .moviedescription,
+    .moviecontainer6 .moviedescription {
+        grid-column: 2; /* description takes up the second column */
+        grid-row: 1; /* first row */
+        text-align: left;
+        padding: 16px;
+        font-size: 1.5rem;
+        min-height: 150px;
+    }
+
+    /* watch now button in second column, second row */
+    .moviecontainer4 .watchnow,
+    .moviecontainer5 .watchnow,
+    .moviecontainer6 .watchnow {
+        grid-column: 2; /* button takes up the second column */
+        grid-row: 2; /* second row */
+        padding: 20px;
+        background-color: #eef36a;
+        align-self: flex-start;
+        margin-left: 20px;
+        width: 90%; /* button width */
+        cursor: pointer;
+    }
+
+    /* hover effect for watch now button */
+    .moviecontainer4 .watchnow:hover,
+    .moviecontainer5 .watchnow:hover,
+    .moviecontainer6 .watchnow:hover {
+        background-color: #231651;
+        color: #ffffff;
+    }
+}
