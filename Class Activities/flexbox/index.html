@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Task</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Press+Start+2P&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <!-- navigation bar --> 
+  <div class="nav">
+      <h2>Web Dev II Task</h2>
+      <nav>
+        <ul> 
+          <li><a href="#card-component">Card Component</a></li>
+          <li><a href="#gallery">Image Gallery</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#todo-list">To-Do List</a></li>
+        </ul>
+      </nav>
+  </div>
+
+  <div style="margin-top: 130px;"></div>
+
+  <div class="enhypen">
+    <h1>Enhypen</h1>
+    <br><br>
+    <p>ENHYPEN is a South Korean boy group that debuted in 2020, formed through the reality show I-LAND. 
+      Known for their unique blend of music and captivating performances, the group made their official 
+      debut with the album BORDER: DAY ONE. The members include Heeseung, Jungwon, Jay, Jake, Sunghoon, 
+      Sunoo, and Ni-ki, the youngest member of the group.</p>
+    <br>
+    <p>With their fandom named Engene, ENHYPEN has garnered immense popularity for their innovative 
+      concepts and relatable themes. As of 2024, ENHYPEN continues to evolve and surprise fans with their
+      latest album, Romance: Untold, solidifying their place in the K-pop industry while captivating 
+      audiences worldwide.
+    </p>
+  </div>
+
+  <br>
+  <h1>Albums</h1>
+
+  <!-- card component -->
+  <div id="card-component">
+    <div class="card">
+      <img src="images/romanceuntold.jpeg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Romance: Untold Album</h2>
+        <br>
+        <p class="card-description">"Romance Untold" is ENHYPEN's upcoming album that explores the 
+          complexities of love and heartache through electrifying beats and emotional lyrics, diving 
+          into the journey of young relationships.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/borderdayone.jpeg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Border: Day One Album</h2>
+        <br>
+        <p class="card-description">"BORDER: DAY ONE" marks ENHYPEN's debut, capturing their transition 
+          from trainees to idols. With tracks like "Given-Taken," it explores themes of new beginnings, 
+          fate, and the excitement of stepping into the unknown.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/dimensiondilemma.jpeg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Dimension: Dilemma Album</h2>
+        <br>
+        <p class="card-description">"DIMENSION: DILEMMA" delves into the struggles of youth and 
+          self-discovery, highlighting the pressures of fame and ambition. The album addresses the
+          duality of fitting in versus standing out in a complex world.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/dimensionanswer.jpeg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Dimension: Answer Album</h2>
+        <br>
+        <p class="card-description">"DIMENSION: ANSWER" serves as a repackage of DIMENSION: DILEMMA, 
+          offering resolution to the challenges faced in the original. Through impactful tracks, it 
+          reflects on identity and the search for clarity amidst chaos.</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="images/orangeblood.jpeg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Orange Blood Album</h2>
+        <br>
+        <p class="card-description">"ORANGE BLOOD" presents vibrant melodies and themes of resilience 
+          and inner strength. Using the metaphor of "orange blood," it symbolizes hope and determination 
+          in overcoming life's challenges.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/darkblood.jpeg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Dark Blood Album</h2>
+        <br>
+        <p class="card-description">"DARK BLOOD" explores themes of sacrifice and temptation, blending 
+          dark fantasy elements with powerful storytelling. Tracks like "Bite Me" showcase ENHYPEN's 
+          unique style and intensity in the K-pop scene.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: 50px;"></div>
+  <h1>Concept Photos</h1>
+
+  <!-- responsive image gallery -->
+  <div id="gallery">
+    <img src="images/1.jpeg" alt="Gallery Image 1">
+    <img src="images/2.jpeg" alt="Gallery Image 2">
+    <img src="images/3.jpeg" alt="Gallery Image 3">
+    <img src="images/5.jpeg" alt="Gallery Image 5">
+    <img src="images/6.jpeg" alt="Gallery Image 6">
+    <img src="images/8.jpeg" alt="Gallery Image 8">
+    <img src="images/9.jpeg" alt="Gallery Image 9">
+    <img src="images/10.jpeg" alt="Gallery Image 10">
+    <img src="images/11.jpeg" alt="Gallery Image 11">
+    <img src="images/13.jpeg" alt="Gallery Image 13">
+    <img src="images/14.jpeg" alt="Gallery Image 14">
+  </div>
+
+  <div style="margin-top: 50px;"></div>
+  <h1>Quiz Time!</h1>
+
+  <!-- quiz layout -->
+  <div id="quiz">
+    <div class="question"><b>1. What year did ENHYPEN debut?</b></div>
+    <div class="choices">
+      <label><input type="radio" name="capital"> 2019</label>
+      <label><input type="radio" name="capital"> 2020</label>
+      <label><input type="radio" name="capital"> 2021</label>
+      <label><input type="radio" name="capital"> 2022</label>
+    </div>
+
+    <div class="question"><b>2. Which reality show formed ENHYPEN?</b></div>
+    <div class="choices">
+      <label><input type="radio" name="capital"> Produce 101</label>
+      <label><input type="radio" name="capital"> Road to Kingdom</label>
+      <label><input type="radio" name="capital"> I-LAND</label>
+      <label><input type="radio" name="capital"> No Mercy</label>
+    </div>
+
+    <div class="question"><b>3. What is the title of ENHYPEN's debut album?</b></div>
+    <div class="choices">
+      <label><input type="radio" name="capital"> BORDER: DAY ONE</label>
+      <label><input type="radio" name="capital"> DIMENSION: DILEMMA</label>
+      <label><input type="radio" name="capital"> BORDER: CARNIVAL</label>
+      <label><input type="radio" name="capital"> ROMANCE: UNTOLD</label>
+    </div>
+
+    <div class="question"><b>4. What is the name of ENHYPEN's fandom?</b></div>
+    <div class="choices">
+      <label><input type="radio" name="capital"> ENGENE</label>
+      <label><input type="radio" name="capital"> EUPHORIA</label>
+      <label><input type="radio" name="capital"> ENLIGHTEN</label>
+      <label><input type="radio" name="capital"> ENHYPENatics</label>
+    </div>
+
+    <div class="question"><b>5. Who is the youngest member of ENHYPEN?</b></div>
+    <div class="choices">
+      <label><input type="radio" name="capital"> Heeseung</label>
+      <label><input type="radio" name="capital"> Ni-ki</label>
+      <label><input type="radio" name="capital"> Sunoo</label>
+      <label><input type="radio" name="capital"> Jungwon</label>
+    </div>
+
+  </div>
+
+  <div style="margin-top: 70px;"></div>
+  <h1>TO-DO LIST</h1>
+
+  <!-- to-do list -->
+  <div id="todo-list">
+    <div class="todo-item">
+      <input type="checkbox">
+      <label>stream music videos</label>
+      <button class="delete-btn">Delete</button>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox">
+      <label>vote for music bank</label>
+      <button class="delete-btn">Delete</button>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox">
+      <label>learn xo choreography</label>
+      <button class="delete-btn">Delete</button>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox">
+      <label>watch en-o'clock ep 98</label>
+      <button class="delete-btn">Delete</button>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox">
+      <label>unbox arcanum album</label>
+      <button class="delete-btn">Delete</button>
+    </div>
+  </div>
+
+  <div style="margin-top: 160px;"></div>
+  <p><small>&copy; Belift Lab</small></p>
+
+
+  <script>
+    const deleteButtons = document.querySelectorAll('.delete-btn');
+
+    deleteButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const todoItem = this.parentElement;
+        todoItem.remove(); // remove to-do item from the list
+      });
+    });
+  </script>
+
+</body>
+</html>
