@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layouts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Press+Start+2P&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <!-- Two Column Layout Page -->
+  <div id="two-column">
+    <h1>ENHYPEN Overview</h1>
+    <div class="container">
+      <div class="sidebar">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="#members">Members</a></li>
+          <li><a href="#discography">Discography</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#social">Social Media</a></li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <h2>About ENHYPEN</h2>
+        <p>
+          ENHYPEN is a seven-member K-pop boy group formed by Belift Lab, a joint venture between CJ ENM and Big Hit Entertainment. 
+          The group was formed through the 2020 survival competition show "I-LAND" and debuted on November 30, 2020, with their extended play (EP) 
+          titled <em>Border: Day One</em>.
+        </p>
+        <p>
+          ENHYPEN's name symbolizes connection, discovery, and growth. The group connects people, just like how a hyphen connects different words to create new meanings. 
+          Since their debut, ENHYPEN has gained massive popularity both domestically and internationally, known for their synchronized choreography, powerful music, and 
+          unique concepts.
+        </p>
+
+        <h2 id="members">Members</h2>
+        <div class="members">
+          <div class="member">
+            <img src="images/won.jpg" alt="Jungwon">
+            <h3>Jungwon</h3>
+            <p>Yang Jungwon (양정원)</p>
+          </div>
+          <div class="member">
+            <img src="images/hee.jpg" alt="Heeseung">
+            <h3>Heeseung</h3>
+            <p>Lee Heeseung (이희승)</p>
+          </div>
+          <div class="member">
+            <img src="images/jay.jpg" alt="Jay">
+            <h3>Jay</h3>
+            <p>Park Jongseong (박종성)</p>
+          </div>
+          <div class="member">
+            <img src="images/jake.jpg" alt="Jake">
+            <h3>Jake</h3>
+            <p>Sim Jaeyun (심재윤)</p>
+          </div>
+          <div class="member">
+            <img src="images/hoon.jpg" alt="Sunghoon">
+            <h3>Sunghoon</h3>
+            <p>Park Sunghoon (박성훈)</p>
+          </div>
+          <div class="member">
+            <img src="images/sun.jpeg" alt="Sunoo">
+            <h3>Sunoo</h3>
+            <p>Kim Sunoo (김선우)</p>
+          </div>
+          <div class="member">
+            <img src="images/niki.jpg" alt="Ni-ki">
+            <h3>Ni-ki</h3>
+            <p>Nishimura Riki (西村 力)</p>
+          </div>
+        </div>
+
+        <h2 id="discography">Discography</h2>
+        <p>
+          ENHYPEN has released multiple albums and EPs since their debut, including:
+          <ul>
+            <li><strong>Border: Day One</strong> (2020)</li>
+            <li><strong>Border: Carnival</strong> (2021)</li>
+            <li><strong>Dimension: Dilemma</strong> (2021)</li>
+            <li><strong>Manifesto: Day 1</strong> (2022)</li>
+          </ul>
+        </p>
+
+        <h2 id="achievements">Achievements</h2>
+        <p>
+          ENHYPEN has won numerous awards, including:
+          <ul>
+            <li><strong>Best New Artist</strong> at the Mnet Asian Music Awards (2020)</li>
+            <li><strong>Rookie of the Year</strong> at the Golden Disc Awards (2021)</li>
+            <li><strong>Top 10 Artists</strong> at the Melon Music Awards (2021)</li>
+          </ul>
+        </p>
+
+        <h2 id="social">Social Media</h2>
+        <p>
+          Follow ENHYPEN on their social media platforms:
+          <ul>
+            <li><a href="https://www.instagram.com/enhypen/" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/ENHYPEN" target="_blank">Twitter</a></li>
+            <li><a href="https://www.youtube.com/@ENHYPENOFFICIAL" target="_blank">YouTube</a></li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="margin-top: 130px;"></div>
+
+  <!-- Responsive Photo Grid Page -->
+  <div id="photo-grid">
+    <h1>Gallery</h1>
+    <div class="photo-grid">
+      <img src="images/4.jpeg" alt="Image 1">
+      <img src="images/5.jpeg" alt="Image 2">
+      <img src="images/3.jpeg" alt="Image 3">
+      <img src="images/1.jpeg" alt="Image 4">
+    </div>
+  </div>
+
+  <div style="margin-top: 130px;"></div>
+
+  <!-- Dashboard Page -->
+  <div class="dashboard">
+    <div class="header">
+      <h1>ENHYPEN Dashboard</h1>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li><a href="#stats">Statistics</a></li>
+        <li><a href="#activity">Recent Activity</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="content">
+        <div class="widget-grid">
+          
+          <!-- Fan Statistics Widget -->
+          <div id="stats" class="widget">
+            <h2>Statistics</h2>
+            <ul>
+              <li><strong>Album Sales:</strong> 3.5 million+ copies sold worldwide</li>
+              <li><strong>YouTube Views:</strong> 500 million+ views on official music videos</li>
+              <li><strong>Spotify Monthly Listeners:</strong> 6.2 million+ listeners</li>
+              <li><strong>Instagram Followers:</strong> 9.5 million+ followers</li>
+            </ul>
+          </div>
+          
+          <!-- Recent Activity Widget -->
+          <div id="activity" class="widget">
+            <h2>Recent Activity</h2>
+            <ul>
+              <li><strong>2024-09-25:</strong> Participated in a fan project for the group's anniversary.</li>
+              <li><strong>2024-09-20:</strong> Bought exclusive limited-edition K-pop merchandise online.</li>
+              <li><strong>2024-09-15:</strong> Watched a livestream of a K-pop concert with friends.</li>
+            </ul>
+          </div>
+  
+          <!-- Notifications Widget -->
+          <div id="notifications" class="widget">
+            <h2>Notifications</h2>
+            <ul>
+              <li><strong>Upcoming Concert:</strong> Seoul Music Awards live stream on October 10th.</li>
+              <li><strong>Fan Meeting:</strong> Virtual fan meet with your favorite group on October 5th.</li>
+              <li><strong>Merch Drop:</strong> New official merchandise release on November 1st.</li>
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 130px;"></div>
+
+ <!-- Product Page with 3 Product Samples -->
+  <div id="product-page">
+    <h1>Products</h1>
+    <div class="products">
+      <div class="product">
+        <img src="images/product1.png" alt="Product 1">
+        <div class="product-title">Dark Blood (Set)</div>
+        <div class="product-price">AED 174.36</div>
+        <br>
+        <div class="product-description">Release date:	2023.05.22</div>
+      </div>
+
+      <div class="product">
+        <img src="images/product2.jpg" alt="Product 2">
+        <div class="product-title">1st Studio Album 'Dimesion : Dilemma' (Set)</div>
+        <div class="product-price">AED 161.13</div>
+        <br>
+        <div class="product-description">Release date:	2021. 10. 12</div>
+      </div>
+
+      <div class="product">
+        <img src="images/product3.png" alt="Product 3">
+        <div class="product-title">Romance : Untold (Set)</div>
+        <div class="product-price">AED 257.07</div>
+        <br>
+        <div class="product-description">Release date:	2024.07.12</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 130px;"></div>
+
+  <!-- Quiz Task Page -->
+  <div id="quiz">
+    <h1>Quiz</h1>
+    <div class="quiz-container">
+      <div class="question">What year did ENHYPEN debut?</div>
+      <div class="choices">
+        <div>A) 2019</div>
+        <div>B) 2020</div>
+        <div>C) 2021</div>
+        <div>D) 2022</div>
+      </div>
+
+      <br>
+
+      <div class="question">Which reality show formed ENHYPEN?</div>
+      <div class="choices">
+        <div>A) Produce 101</div>
+        <div>B) I-LAND</div>
+        <div>C) Road to Kingdom</div>
+        <div>D) No Mercy</div>
+      </div>
+
+      <br>
+
+      <div class="question">What is the title of ENHYPEN's debut album?</div>
+      <div class="choices">
+        <div>A) DIMENSION: DILEMMA</div>
+        <div>B) BORDER: DAY ONE</div>
+        <div>C) BORDER: CARNIVAL</div>
+        <div>D) DIMENSION: ANSWER</div>
+      </div>
+      
+      <br>
+
+      <div class="question">What is the name of ENHYPEN's fandom?</div>
+      <div class="choices">
+        <div>A) Engene</div>
+        <div>B) Euphoria</div>
+        <div>C) Enlighten</div>
+        <div>D) ENHYPENatics</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 130px;"></div>
+
+<script>
+  // Album collection chart
+  const albumCtx = document.getElementById('albumChart').getContext('2d');
+  const albumChart = new Chart(albumCtx, {
+    type: 'bar',
+    data: {
+      labels: ['Albums', 'Concerts', 'Merchandise'],
+      datasets: [{
+        label: 'Fan Collection',
+        data: [15, 4, 20],
+        backgroundColor: ['#ff6384', '#36a2eb', '#ffcd56'],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
