@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flexbox Task</title>
+  <!-- custom fonts from google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Press+Start+2P&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- external stylesheet -->
 </head>
 <body>
  
@@ -15,7 +16,7 @@
   <div class="nav">
       <h2>Web Dev II Task</h2>
       <nav>
-        <ul> 
+        <ul> <!-- links to different sections of the page -->
           <li><a href="#card-component">Card Component</a></li>
           <li><a href="#gallery">Image Gallery</a></li>
           <li><a href="#quiz">Quiz</a></li>
@@ -24,6 +25,7 @@
       </nav>
   </div>
 
+  <!-- spacer for layout adjustment -->
   <div style="margin-top: 130px;"></div>
 
   <div class="enhypen">
@@ -42,11 +44,10 @@
   </div>
 
   <br>
-  <h1>Albums</h1>
-
+  <h1>Albums</h1> <!-- albums section -->
   <!-- card component -->
   <div id="card-component">
-    <div class="card">
+    <div class="card"> <!-- individual album cards with album image, title, and description -->
       <img src="images/romanceuntold.jpeg" alt="Card Image">
       <div class="card-content">
         <h2 class="card-title">Romance: Untold Album</h2>
@@ -114,7 +115,9 @@
 
   </div>
 
+  <!-- spacer for layout adjustment -->
   <div style="margin-top: 50px;"></div>
+  
   <h1>Concept Photos</h1>
 
   <!-- responsive image gallery -->
@@ -133,12 +136,13 @@
   </div>
 
   <div style="margin-top: 50px;"></div>
+
   <h1>Quiz Time!</h1>
 
   <!-- quiz layout -->
-  <div id="quiz">
+  <div id="quiz"> <!-- individual quiz questions -->
     <div class="question"><b>1. What year did ENHYPEN debut?</b></div>
-    <div class="choices">
+    <div class="choices"> <!-- radiobuttons for answer choices -->
       <label><input type="radio" name="capital"> 2019</label>
       <label><input type="radio" name="capital"> 2020</label>
       <label><input type="radio" name="capital"> 2021</label>
@@ -180,11 +184,12 @@
   </div>
 
   <div style="margin-top: 70px;"></div>
+
   <h1>TO-DO LIST</h1>
 
   <!-- to-do list -->
   <div id="todo-list">
-    <div class="todo-item">
+    <div class="todo-item"> <!-- individual to do item with checkbox and delete option -->
       <input type="checkbox">
       <label>stream music videos</label>
       <button class="delete-btn">Delete</button>
@@ -212,9 +217,10 @@
   </div>
 
   <div style="margin-top: 160px;"></div>
-  <p><small>&copy; Belift Lab</small></p>
 
+  <p><small>&copy; Belift Lab</small></p> <!-- copyright -->
 
+<!-- script for deleting to-do items -->
   <script>
     const deleteButtons = document.querySelectorAll('.delete-btn');
 
