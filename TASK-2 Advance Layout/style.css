@@ -248,7 +248,7 @@ header .search button:hover { /* hover effect for search button */
     .moviecontainer4,
     .moviecontainer5,
     .moviecontainer6 {
-       gap: 16px;
+        gap: 16px;
         width: 100%;
         box-sizing: border-box;
         margin-top: 16px;
@@ -271,7 +271,8 @@ header .search button:hover { /* hover effect for search button */
     .moviecontainer6 .moviedescription {
         font-size: 1.5rem;
         text-align: left;
-        min-height: 100px;
+        min-height: 300px;
+        margin-bottom: 65px;
     }
 
     /* watch now button in second column, second row */
@@ -281,8 +282,6 @@ header .search button:hover { /* hover effect for search button */
         grid-column: 1; 
         grid-row: 3; 
         background-color: #eef36a;
-        margin-bottom: 15px;
-        margin-top: -10px;
         padding-left: 10px 110px;
     }
 
@@ -341,7 +340,7 @@ header .search button:hover { /* hover effect for search button */
     .moviecontainer1 .watchnow {
         max-width: 200px;
         padding: 30px;
-        padding-left: 50px;
+        padding-left: 40px;
         position: absolute;
         top: 480px;
         right: 50px;
@@ -350,6 +349,13 @@ header .search button:hover { /* hover effect for search button */
     .moviecontainer2,
     .moviecontainer3 {
         grid-column: span 1;
+    }
+
+    /* For movie containers 2, 3, 4, 5, 6 */
+    .moviecontainer4,
+    .moviecontainer5,
+    .moviecontainer6 {
+        grid-column: span 2; /* Make these span across both columns */
     }
 
 
@@ -418,7 +424,6 @@ header .search button:hover { /* hover effect for search button */
         align-self: flex-start;
         margin-left: 20px;
         width: 90%; /* button width */
-        cursor: pointer;
     }
 
     /* hover effect for watch now button */
