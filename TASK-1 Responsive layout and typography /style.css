@@ -377,7 +377,7 @@ footer {
 
     .albums {
         display: grid; /*  */
-        grid-template-columns: 50% 25% 25%; /* 2 large and 4 smaller image layouts */
+        grid-template-columns: 50% 25% 25%; /* 1 large and 4 smaller image layouts */
         grid-template-rows: 1fr 1fr;
         gap: 0;
 
